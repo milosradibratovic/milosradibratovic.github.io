@@ -1,0 +1,65 @@
+.card {
+	position: relative;
+	text-align: center;
+	width: 250px;
+	.icon {
+		box-sizing: content-box;
+		overflow: hidden;
+		display: inline-block;
+		background-color: $cyan-500;
+		margin: auto;
+		border-radius: 50%;
+		border: 1px solid $cyan-700;
+		width: 80px;
+		height: 80px;
+		position: relative;
+		text-align: center;
+		z-index: 3;
+		transition: box-shadow ease 500ms;
+		cursor: pointer;
+		span {
+			color: $white;
+			position: relative;
+			right: 3px;
+			bottom: 3px;
+		}
+	}
+	.icon:hover {
+		box-shadow: 1px 1px 5px $gray-lighter, -1px 1px 5px $gray-lighter, 1px -1px 5px $gray-lighter, -1px -1px 5px $gray-lighter;
+	}
+	.icon:active {
+		box-shadow: none;
+	}
+
+	.panel {
+		position: relative;
+		top: -50px;
+		height: auto;
+		padding: 40px 10px 10px 10px;
+		border: 5px solid $cyan-700;
+		margin: 0px;
+		background-color: $cyan-500;
+
+		ul {
+			list-style-type: none;
+			padding: 0px;
+			margin: 0px;
+			li {
+				text-align: center;
+				margin: 10px;
+				padding: 10px;
+			}
+		}
+		.comming-soon-subsection {
+			color: $gray-light;
+			h4 {
+				padding: 5px;
+			}
+			ul {
+				li {
+					background-color: inherit;
+				}
+			}
+		}
+	}
+}

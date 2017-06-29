@@ -1,0 +1,11 @@
+#portfolio-section {
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  h1 {
+    @include section-title;
+    background-color: $cyan-500;
+    padding: 25px;
+  }
+  background-color: $white;
+}

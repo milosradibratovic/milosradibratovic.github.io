@@ -1,0 +1,38 @@
+.tile {
+  display: inline-block;
+  border: 1px solid $gray-lighter;
+  padding: 5px;
+  margin: 50px 30px;
+  box-shadow: 2px 2px 5px $gray-light;
+  .tile-thumbnail {
+    margin: 0px auto;
+    padding: 0px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border: 1px solid $gray-lighter;
+    background-color: $cyan-500;
+    img {
+      width: 600px;
+      height: auto;
+      opacity: 0.5;
+      transition: all 0.3s;
+      transition-timing-function: ease-in-out;
+      // transform: translateX(-150px);
+
+    }
+    img:hover {
+      opacity: 1;
+    }
+  }
+
+  .tile-content {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    .tile-title {
+      color: $gray-light;
+      @include tile-title;
+    }
+  }
+}

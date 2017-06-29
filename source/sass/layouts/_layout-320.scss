@@ -1,0 +1,107 @@
+@media screen and (min-width: 320px) and (max-width: 949px)  {
+  #navbar-section   {
+    text-align: center;
+    box-shadow: 0 1px 5px $gray-light;
+    .logo {
+      margin: 0 auto;
+    }
+    nav {
+      position: fixed;
+      top: 57px;
+      width: 100%;
+      height: auto;
+      box-shadow: 0px 1px 5px $gray-light;
+      clip-path: circle(0px at top);
+      transition: clip-path ease-in-out 700ms;
+      ul {
+        li {
+          float: none;
+          a {
+            display: block;
+            background-color: $cyan-700;
+            border-top: 1px solid darken($cyan-700, 10%);
+          }
+          a::after {
+            @include clearfix;
+          }
+        }
+      }
+    }
+    .nav-show {
+      clip-path: circle(150% at top);
+    }
+    .nav-toggle-button {
+      padding: 20px;
+      position: absolute;
+      top: 8px;
+      right: 4px;
+      cursor: pointer;
+      .hamburger, .hamburger::before, .hamburger::after {
+        content: '';
+        display: block;
+        background: $white;
+        height: 3px;
+        width: 40px;
+        border-radius: 3px;
+        transition: all ease-in-out 500ms;
+      }
+      .hamburger::before {
+        transform: translateY(-8px);
+      }
+      .hamburger::after {
+        transform: translateY(5px);
+      }
+    }
+    .nav-toggle-button-transform {
+      .hamburger::before {
+        opacity: 0;
+      }
+      .hamburger {
+        transform: rotate(45deg);
+      }
+      .hamburger::after {
+        transform: rotate(90deg) translateX(-2.5px);
+      }
+    }
+  }
+  #about-me-section {
+    #profile-subsection {
+      #profile-image {
+        max-width: 250px;
+      }
+    }
+    #skills-subsection {
+      margin: 0 5%;
+      display: flex;
+      flex-flow: column nowrap;
+      align-content: center;
+      .card {
+        margin: 50px auto;
+        text-align: center;
+        overflow: hidden;
+        .icon {
+          border: 3px solid $cyan-700;
+        }
+        .panel {
+          width: 250px;
+          height: auto;
+          padding-top: 45px;
+          border: 3px solid $cyan-700;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+  #portfolio-section {
+    #portfolio-tiles {
+      display: flex;
+      flex-flow: column nowrap;
+      margin: 50px auto;
+      .tile {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
