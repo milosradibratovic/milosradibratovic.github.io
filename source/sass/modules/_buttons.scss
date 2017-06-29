@@ -1,5 +1,6 @@
 .btn {
-  margin: 0px auto;
+  width: 150px;
+  margin: 10px auto;
   padding: 15px 10px;
   @include border-radius(25px);
   background-color: $green-500;
