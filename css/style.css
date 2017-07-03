@@ -1,7 +1,8 @@
 /* BASE COLOR PALETTE */
 /* FONTS */
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0px;
   margin: 0px; }
 
@@ -29,7 +30,8 @@ a {
   text-align: center;
   width: 250px; }
   .card .icon {
-    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
     overflow: hidden;
     display: inline-block;
     background-color: #00bcd4;
@@ -41,7 +43,10 @@ a {
     position: relative;
     text-align: center;
     z-index: 3;
+    -webkit-transition: -webkit-box-shadow ease 500ms;
+    transition: -webkit-box-shadow ease 500ms;
     transition: box-shadow ease 500ms;
+    transition: box-shadow ease 500ms, -webkit-box-shadow ease 500ms;
     cursor: pointer; }
     .card .icon span {
       color: #ffffff;
@@ -49,9 +54,11 @@ a {
       right: 3px;
       bottom: 3px; }
   .card .icon:hover {
-    box-shadow: 1px 1px 5px #eee, -1px 1px 5px #eee, 1px -1px 5px #eee, -1px -1px 5px #eee; }
+    -webkit-box-shadow: 1px 1px 5px #eee, -1px 1px 5px #eee, 1px -1px 5px #eee, -1px -1px 5px #eee;
+            box-shadow: 1px 1px 5px #eee, -1px 1px 5px #eee, 1px -1px 5px #eee, -1px -1px 5px #eee; }
   .card .icon:active {
-    box-shadow: none; }
+    -webkit-box-shadow: none;
+            box-shadow: none; }
   .card .panel {
     position: relative;
     top: -50px;
@@ -80,7 +87,8 @@ a {
   border: 1px solid #eee;
   padding: 5px;
   margin: 50px 30px;
-  box-shadow: 2px 2px 5px #777; }
+  -webkit-box-shadow: 2px 2px 5px #777;
+          box-shadow: 2px 2px 5px #777; }
   .tile .tile-thumbnail {
     margin: 0px auto;
     padding: 0px;
@@ -93,8 +101,10 @@ a {
       width: 600px;
       height: auto;
       opacity: 0.5;
+      -webkit-transition: all 0.3s;
       transition: all 0.3s;
-      transition-timing-function: ease-in-out; }
+      -webkit-transition-timing-function: ease-in-out;
+              transition-timing-function: ease-in-out; }
     .tile .tile-thumbnail img:hover {
       opacity: 1; }
   .tile .tile-content {
@@ -119,14 +129,18 @@ a {
   color: #eee;
   overflow: hidden;
   position: relative;
+  -webkit-transition: -webkit-box-shadow 0.5 ease-in-out;
+  transition: -webkit-box-shadow 0.5 ease-in-out;
   transition: box-shadow 0.5 ease-in-out;
+  transition: box-shadow 0.5 ease-in-out, -webkit-box-shadow 0.5 ease-in-out;
   z-index: 1;
   display: block;
   cursor: pointer; }
 
 .btn:hover {
   z-index: 10;
-  box-shadow: 2px 2px 5px #777; }
+  -webkit-box-shadow: 2px 2px 5px #777;
+          box-shadow: 2px 2px 5px #777; }
 
 .disabled {
   background-color: #777; }
@@ -137,15 +151,24 @@ a {
   background-color: #ffffff;
   opacity: 0.4;
   border-radius: 100%;
-  transform: scale(0); }
+  -webkit-transform: scale(0);
+          transform: scale(0); }
 
 .ink-animate {
-  animation: ripple 0.5s ease-in-out; }
+  -webkit-animation: ripple 0.5s ease-in-out;
+          animation: ripple 0.5s ease-in-out; }
+
+@-webkit-keyframes ripple {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5); } }
 
 @keyframes ripple {
   100% {
     opacity: 0;
-    transform: scale(2.5); } }
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5); } }
 #navbar-section {
   position: fixed;
   top: 0px;
@@ -154,7 +177,8 @@ a {
   width: 100%;
   background-color: #0097a7;
   color: #eee;
-  box-shadow: 0 1px 5px #777; }
+  -webkit-box-shadow: 0 1px 5px #777;
+          box-shadow: 0 1px 5px #777; }
   #navbar-section .logo {
     float: left;
     display: inline-block;
@@ -232,7 +256,8 @@ a {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 200%;
-    box-shadow: 0px 1px 5px #777;
+    -webkit-box-shadow: 0px 1px 5px #777;
+            box-shadow: 0px 1px 5px #777;
     padding: 25px;
     background-color: #00bcd4; }
   #about-me-section #profile-subsection {
@@ -244,7 +269,8 @@ a {
       height: auto;
       border-radius: 5%;
       border: 5px solid #0097a7;
-      box-shadow: 1px 1px 5px #777; }
+      -webkit-box-shadow: 1px 1px 5px #777;
+              box-shadow: 1px 1px 5px #777; }
     #about-me-section #profile-subsection .content-box {
       margin: 25px auto;
       max-width: 800px;
@@ -253,14 +279,16 @@ a {
       padding: 30px;
       text-align: justify;
       border: 1px solid #eee;
-      box-shadow: 1px 1px 5px #777; }
+      -webkit-box-shadow: 1px 1px 5px #777;
+              box-shadow: 1px 1px 5px #777; }
   #about-me-section h2 {
     text-align: center;
     letter-spacing: 3px;
     font-weight: 500;
     text-transform: uppercase;
     font-size: 150%;
-    box-shadow: 0px 1px 5px #777;
+    -webkit-box-shadow: 0px 1px 5px #777;
+            box-shadow: 0px 1px 5px #777;
     background-color: #00bcd4;
     padding: 15px 50px;
     width: 95%;
@@ -285,7 +313,8 @@ a {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 200%;
-    box-shadow: 0px 1px 5px #777;
+    -webkit-box-shadow: 0px 1px 5px #777;
+            box-shadow: 0px 1px 5px #777;
     background-color: #00bcd4;
     padding: 25px; }
 
@@ -303,6 +332,7 @@ a {
       color: #ffffff; }
     #contact-section .contact-item a:hover span {
       color: #00bcd4;
+      -webkit-transition: color ease-in-out 0.5s;
       transition: color ease-in-out 0.5s; }
     #contact-section .contact-item a:active span {
       text-shadow: 1px 1px 1px #4dd0e1, -1px -1px 1px #4dd0e1, -1px 1px 1px #4dd0e1, 1px -1px 1px #4dd0e1; }
@@ -310,7 +340,8 @@ a {
 @media screen and (min-width: 320px) and (max-width: 949px) {
   #navbar-section {
     text-align: center;
-    box-shadow: 0 1px 5px #777; }
+    -webkit-box-shadow: 0 1px 5px #777;
+            box-shadow: 0 1px 5px #777; }
     #navbar-section .logo {
       margin: 0 auto; }
     #navbar-section nav {
@@ -318,9 +349,14 @@ a {
       top: 57px;
       width: 100%;
       height: auto;
-      box-shadow: 0px 1px 5px #777;
-      clip-path: circle(0px at top);
-      transition: clip-path ease-in-out 700ms; }
+      -webkit-box-shadow: 0px 1px 5px #777;
+              box-shadow: 0px 1px 5px #777;
+      -webkit-clip-path: circle(0px at top);
+              clip-path: circle(0px at top);
+      -webkit-transition: -webkit-clip-path ease-in-out 700ms;
+      transition: -webkit-clip-path ease-in-out 700ms;
+      transition: clip-path ease-in-out 700ms;
+      transition: clip-path ease-in-out 700ms, -webkit-clip-path ease-in-out 700ms; }
       #navbar-section nav ul li {
         float: none; }
         #navbar-section nav ul li a {
@@ -334,7 +370,8 @@ a {
           height: 0;
           clear: both; }
     #navbar-section .nav-show {
-      clip-path: circle(150% at top); }
+      -webkit-clip-path: circle(150% at top);
+              clip-path: circle(150% at top); }
     #navbar-section .nav-toggle-button {
       padding: 20px;
       position: absolute;
@@ -348,25 +385,36 @@ a {
         height: 3px;
         width: 40px;
         border-radius: 3px;
+        -webkit-transition: all ease-in-out 500ms;
         transition: all ease-in-out 500ms; }
       #navbar-section .nav-toggle-button .hamburger::before {
-        transform: translateY(-8px); }
+        -webkit-transform: translateY(-8px);
+                transform: translateY(-8px); }
       #navbar-section .nav-toggle-button .hamburger::after {
-        transform: translateY(5px); }
+        -webkit-transform: translateY(5px);
+                transform: translateY(5px); }
     #navbar-section .nav-toggle-button-transform .hamburger::before {
       opacity: 0; }
     #navbar-section .nav-toggle-button-transform .hamburger {
-      transform: rotate(45deg); }
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
     #navbar-section .nav-toggle-button-transform .hamburger::after {
-      transform: rotate(90deg) translateX(-2.5px); }
+      -webkit-transform: rotate(90deg) translateX(-2.5px);
+              transform: rotate(90deg) translateX(-2.5px); }
 
   #about-me-section #profile-subsection #profile-image {
     max-width: 250px; }
   #about-me-section #skills-subsection {
     margin: 0 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column nowrap;
-    align-content: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -ms-flex-line-pack: center;
+        align-content: center; }
     #about-me-section #skills-subsection .card {
       margin: 50px auto;
       text-align: center;
@@ -381,8 +429,13 @@ a {
         overflow: hidden; }
 
   #portfolio-section #portfolio-tiles {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
     margin: 50px auto; }
     #portfolio-section #portfolio-tiles .tile {
       max-width: 400px;
@@ -391,12 +444,21 @@ a {
 @media screen and (min-width: 950px) and (max-width: 1919px) {
   #about-me-section #skills-subsection {
     margin: 0 2%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row nowrap;
-    align-content: center;
-    justify-content: space-around; }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
     #about-me-section #skills-subsection .card {
-      flex-grow: 0.3;
+      -webkit-box-flex: 0.3;
+          -ms-flex-positive: 0.3;
+              flex-grow: 0.3;
       margin: 50px auto;
       text-align: center;
       overflow: hidden; }
@@ -409,25 +471,48 @@ a {
         overflow: hidden; }
 
   #portfolio-section #portfolio-tiles {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row nowrap;
-    align-content: center;
-    justify-content: space-around; }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
 
   #contact-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row nowrap;
-    align-content: center;
-    justify-content: space-around; } }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
 @media screen and (min-width: 1920px) {
   #about-me-section #skills-subsection {
     margin: 0 2%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row nowrap;
-    align-content: center;
-    justify-content: space-around; }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
     #about-me-section #skills-subsection .card {
-      flex-grow: 0.3;
+      -webkit-box-flex: 0.3;
+          -ms-flex-positive: 0.3;
+              flex-grow: 0.3;
       margin: 50px auto;
       text-align: center;
       overflow: hidden; }
@@ -440,15 +525,27 @@ a {
         overflow: hidden; }
 
   #portfolio-section #portfolio-tiles {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row nowrap;
-    align-content: center;
-    justify-content: space-around; }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
 
   #contact-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row nowrap;
-    align-content: center;
-    justify-content: space-around; } }
-
-/*# sourceMappingURL=style.css.map */
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
