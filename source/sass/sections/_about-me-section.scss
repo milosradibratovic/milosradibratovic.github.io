@@ -5,6 +5,7 @@
   height: auto;
   background-color: $white;
   h1 {
+    margin-top: 50px;
     @include section-title;
     padding: 25px;
     background-color: $cyan-500;
