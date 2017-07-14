@@ -12,9 +12,15 @@
     float: left;
     display: inline-block;
     padding: 10px;
+    -webkit-transition: background-color 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out;
     span {
       font-weight: 400;
     }
+  }
+  .logo:hover {
+    background-color: $cyan-300;
+    cursor: pointer;
   }
   nav {
     padding: 0px;
