@@ -1,54 +1,39 @@
 #about-me-section {
   position: relative;
-  min-width: 100%;
-  width: auto;
+  max-width: 1200px;
+  margin: 0px auto;
   height: auto;
-  background-color: $cyan-200;
+  background-color: $white;
   h1 {
     @include section-title;
     padding: 25px;
     background-color: $cyan-500;
+
   }
   #profile-subsection {
-    margin: 25px;
-    #profile-image {
-      display: block;
-      margin: 50px auto;
-      width: 300px;
-      height: auto;
-      @include border-radius(5%);
-      border: 5px solid $cyan-700;
-      box-shadow: 1px 1px 5px $gray-light;
-    }
-    .content-box {
-      margin: 25px auto;
-      max-width: 800px;
-      color: $gray-lighter;
-      background-color: $cyan-300;
-      padding: 30px;
-      text-align: justify;
-      border: 1px solid $gray-lighter;
-      box-shadow: 1px 1px 5px $gray-light;
-    }
   }
-  h2 {
-    @include subsection-title;
-    background-color: $cyan-500;
-    padding: 15px 50px;
-    width: 95%;
-    border-radius: 50px;
-    margin: 50px auto;
-  }
-  #skills-subsection {
 
-    padding: 5px;
-    .card {
-      .icon {
-        border-width: 0px;
-      }
-      .panel {
-        border-width: 0px;
-        padding: 0px;
+  #skills-subsection {
+    .subsection-title {
+        h2 {
+          @include subsection-title;
+          color: $gray-lighter;
+          padding: 20px;
+          background-color: $cyan-300;
+        }
+    }
+
+    #skill-cards-container {
+      max-width: 1000px;
+      .card {
+        .icon {
+          span {
+      			color: $cyan-500;
+      		}
+        }
+        .panel {
+          border-bottom: 1px solid $cyan-700;
+        }
       }
     }
   }

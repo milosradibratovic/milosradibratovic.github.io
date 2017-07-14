@@ -1,65 +1,33 @@
 .card {
-	position: relative;
+	display: block;
 	text-align: center;
-	width: 250px;
 	.icon {
-		box-sizing: content-box;
-		overflow: hidden;
-		display: inline-block;
-		background-color: $cyan-500;
-		margin: auto;
-		border-radius: 50%;
-		border: 1px solid $cyan-700;
-		width: 80px;
-		height: 80px;
+		display: block;
 		position: relative;
 		text-align: center;
-		z-index: 3;
-		transition: box-shadow ease 500ms;
-		cursor: pointer;
-		span {
-			color: $white;
-			position: relative;
-			right: 3px;
-			bottom: 3px;
-		}
+		z-index: 2;
 	}
-	.icon:hover {
-		box-shadow: 1px 1px 5px $gray-lighter, -1px 1px 5px $gray-lighter, 1px -1px 5px $gray-lighter, -1px -1px 5px $gray-lighter;
+	.card-title {
+		color: $gray;
 	}
-	.icon:active {
-		box-shadow: none;
-	}
-
 	.panel {
 		position: relative;
-		top: -50px;
+		top: -20px;
 		height: auto;
-		padding: 40px 10px 10px 10px;
-		border: 5px solid $cyan-700;
+		padding: 40px 10px;
 		margin: 0px;
-		background-color: $cyan-500;
+		background-color: transparent;
+		color: $gray;
+		text-align: justify;
 
-		ul {
-			list-style-type: none;
-			padding: 0px;
-			margin: 0px;
-			li {
-				text-align: center;
-				margin: 10px;
-				padding: 10px;
-			}
+		a {
+			color: $gray;
 		}
-		.comming-soon-subsection {
+		a:hover {
 			color: $gray-light;
-			h4 {
-				padding: 5px;
-			}
-			ul {
-				li {
-					background-color: inherit;
-				}
-			}
+		}
+		a:active {
+			text-decoration: underline;
 		}
 	}
 }

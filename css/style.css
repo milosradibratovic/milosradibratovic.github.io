@@ -2,7 +2,7 @@
 /* FONTS */
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0px;
   margin: 0px; }
 
@@ -12,7 +12,7 @@ html, body {
   width: 100%;
   height: 100%;
   color: #eee;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -26,113 +26,70 @@ a {
   text-decoration: none; }
 
 .card {
-  position: relative;
-  text-align: center;
-  width: 250px; }
+  display: block;
+  text-align: center; }
   .card .icon {
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
-    overflow: hidden;
-    display: inline-block;
-    background-color: #00bcd4;
-    margin: auto;
-    border-radius: 50%;
-    border: 1px solid #0097a7;
-    width: 80px;
-    height: 80px;
+    display: block;
     position: relative;
     text-align: center;
-    z-index: 3;
-    -webkit-transition: -webkit-box-shadow ease 500ms;
-    transition: -webkit-box-shadow ease 500ms;
-    transition: box-shadow ease 500ms;
-    transition: box-shadow ease 500ms, -webkit-box-shadow ease 500ms;
-    cursor: pointer; }
-    .card .icon span {
-      color: #ffffff;
-      position: relative;
-      right: 3px;
-      bottom: 3px; }
-  .card .icon:hover {
-    -webkit-box-shadow: 1px 1px 5px #eee, -1px 1px 5px #eee, 1px -1px 5px #eee, -1px -1px 5px #eee;
-            box-shadow: 1px 1px 5px #eee, -1px 1px 5px #eee, 1px -1px 5px #eee, -1px -1px 5px #eee; }
-  .card .icon:active {
-    -webkit-box-shadow: none;
-            box-shadow: none; }
+    z-index: 2; }
+  .card .card-title {
+    color: #555; }
   .card .panel {
     position: relative;
-    top: -50px;
+    top: -20px;
     height: auto;
-    padding: 40px 10px 10px 10px;
-    border: 5px solid #0097a7;
+    padding: 40px 10px;
     margin: 0px;
-    background-color: #00bcd4; }
-    .card .panel ul {
-      list-style-type: none;
-      padding: 0px;
-      margin: 0px; }
-      .card .panel ul li {
-        text-align: center;
-        margin: 10px;
-        padding: 10px; }
-    .card .panel .comming-soon-subsection {
+    background-color: transparent;
+    color: #555;
+    text-align: justify; }
+    .card .panel a {
+      color: #555; }
+    .card .panel a:hover {
       color: #777; }
-      .card .panel .comming-soon-subsection h4 {
-        padding: 5px; }
-      .card .panel .comming-soon-subsection ul li {
-        background-color: inherit; }
+    .card .panel a:active {
+      text-decoration: underline; }
 
 .tile {
-  display: inline-block;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 50px 20px;
   border: 1px solid #eee;
-  padding: 5px;
-  margin: 50px 30px;
   -webkit-box-shadow: 2px 2px 5px #777;
-          box-shadow: 2px 2px 5px #777; }
-  .tile .tile-thumbnail {
-    margin: 0px auto;
-    padding: 0px;
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    border: 1px solid #eee;
-    background-color: #00bcd4; }
-    .tile .tile-thumbnail img {
-      width: 600px;
-      height: auto;
-      opacity: 0.5;
-      -webkit-transition: all 0.3s;
-      transition: all 0.3s;
-      -webkit-transition-timing-function: ease-in-out;
-              transition-timing-function: ease-in-out; }
-    .tile .tile-thumbnail img:hover {
-      opacity: 1; }
-  .tile .tile-content {
+  box-shadow: 2px 2px 5px #777; }
+  .tile .tile-icon {
+    margin: 25px;
     text-align: center;
-    margin-top: 25px;
-    margin-bottom: 25px; }
+    color: #777; }
+  .tile .tile-content {
+    text-align: center; }
     .tile .tile-content .tile-title {
+      margin: 25px;
       color: #777;
       text-align: center;
       letter-spacing: 2px;
-      font-weight: 400;
+      font-weight: 600;
       font-size: 125%;
       margin: 25px; }
+    .tile .tile-content .tile-description {
+      margin: 30px 10px;
+      color: #777;
+      text-align: center; }
 
 .btn {
   width: 150px;
   margin: 10px auto;
   padding: 15px 10px;
   border-radius: 25px;
-  background-color: #4caf50;
+  background-color: #00bcd4;
   border: 1px solid #5cb860;
   color: #eee;
   overflow: hidden;
   position: relative;
-  -webkit-transition: -webkit-box-shadow 0.5 ease-in-out;
-  transition: -webkit-box-shadow 0.5 ease-in-out;
-  transition: box-shadow 0.5 ease-in-out;
-  transition: box-shadow 0.5 ease-in-out, -webkit-box-shadow 0.5 ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
   z-index: 1;
   display: block;
   cursor: pointer; }
@@ -140,7 +97,7 @@ a {
 .btn:hover {
   z-index: 10;
   -webkit-box-shadow: 2px 2px 5px #777;
-          box-shadow: 2px 2px 5px #777; }
+  box-shadow: 2px 2px 5px #777; }
 
 .disabled {
   background-color: #777; }
@@ -152,23 +109,22 @@ a {
   opacity: 0.4;
   border-radius: 100%;
   -webkit-transform: scale(0);
-          transform: scale(0); }
+  transform: scale(0); }
 
 .ink-animate {
   -webkit-animation: ripple 0.5s ease-in-out;
-          animation: ripple 0.5s ease-in-out; }
+  animation: ripple 0.5s ease-in-out; }
 
 @-webkit-keyframes ripple {
   100% {
     opacity: 0;
     -webkit-transform: scale(2.5);
-            transform: scale(2.5); } }
-
+    transform: scale(2.5); } }
 @keyframes ripple {
   100% {
     opacity: 0;
     -webkit-transform: scale(2.5);
-            transform: scale(2.5); } }
+    transform: scale(2.5); } }
 #navbar-section {
   position: fixed;
   top: 0px;
@@ -178,7 +134,7 @@ a {
   background-color: #0097a7;
   color: #eee;
   -webkit-box-shadow: 0 1px 5px #777;
-          box-shadow: 0 1px 5px #777; }
+  box-shadow: 0 1px 5px #777; }
   #navbar-section .logo {
     float: left;
     display: inline-block;
@@ -190,7 +146,7 @@ a {
     margin: 0px;
     height: auto;
     position: relative;
-    float: left;
+    float: right;
     background-color: transparent; }
     #navbar-section nav ul {
       list-style-type: none; }
@@ -246,102 +202,75 @@ a {
 
 #about-me-section {
   position: relative;
-  min-width: 100%;
-  width: auto;
+  max-width: 1200px;
+  margin: 0px auto;
   height: auto;
-  background-color: #80deea; }
+  background-color: #ffffff; }
   #about-me-section h1 {
     text-align: center;
     letter-spacing: 5px;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 200%;
-    -webkit-box-shadow: 0px 1px 5px #777;
-            box-shadow: 0px 1px 5px #777;
+    font-size: 250%;
     padding: 25px;
     background-color: #00bcd4; }
-  #about-me-section #profile-subsection {
-    margin: 25px; }
-    #about-me-section #profile-subsection #profile-image {
-      display: block;
-      margin: 50px auto;
-      width: 300px;
-      height: auto;
-      border-radius: 5%;
-      border: 5px solid #0097a7;
-      -webkit-box-shadow: 1px 1px 5px #777;
-              box-shadow: 1px 1px 5px #777; }
-    #about-me-section #profile-subsection .content-box {
-      margin: 25px auto;
-      max-width: 800px;
-      color: #eee;
-      background-color: #4dd0e1;
-      padding: 30px;
-      text-align: justify;
-      border: 1px solid #eee;
-      -webkit-box-shadow: 1px 1px 5px #777;
-              box-shadow: 1px 1px 5px #777; }
-  #about-me-section h2 {
+  #about-me-section #skills-subsection .subsection-title h2 {
     text-align: center;
     letter-spacing: 3px;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
-    font-size: 150%;
-    -webkit-box-shadow: 0px 1px 5px #777;
-            box-shadow: 0px 1px 5px #777;
-    background-color: #00bcd4;
-    padding: 15px 50px;
-    width: 95%;
-    border-radius: 50px;
-    margin: 50px auto; }
-  #about-me-section #skills-subsection {
-    padding: 5px; }
-    #about-me-section #skills-subsection .card .icon {
-      border-width: 0px; }
-    #about-me-section #skills-subsection .card .panel {
-      border-width: 0px;
-      padding: 0px; }
+    font-size: 200%;
+    color: #eee;
+    padding: 20px;
+    background-color: #4dd0e1; }
+  #about-me-section #skills-subsection #skill-cards-container {
+    max-width: 1000px; }
+    #about-me-section #skills-subsection #skill-cards-container .card .icon span {
+      color: #00bcd4; }
+    #about-me-section #skills-subsection #skill-cards-container .card .panel {
+      border-bottom: 1px solid #0097a7; }
 
 #portfolio-section {
-  min-width: 100%;
-  width: auto;
+  max-width: 1200px;
   height: auto;
+  margin: 0px auto;
   background-color: #ffffff; }
   #portfolio-section h1 {
     text-align: center;
     letter-spacing: 5px;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 200%;
-    -webkit-box-shadow: 0px 1px 5px #777;
-            box-shadow: 0px 1px 5px #777;
+    font-size: 250%;
     background-color: #00bcd4;
     padding: 25px; }
 
-#contact-section {
-  border-top: 5px solid #0097a7;
-  border-bottom: 5px solid #0097a7;
+#footer-section {
   background-color: #006064; }
-  #contact-section .contact-item {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin: 0px;
-    text-align: center;
-    font-size: 200%; }
-    #contact-section .contact-item span {
-      color: #ffffff; }
-    #contact-section .contact-item a:hover span {
-      color: #00bcd4;
-      -webkit-transition: color ease-in-out 0.5s;
-      transition: color ease-in-out 0.5s; }
-    #contact-section .contact-item a:active span {
-      text-shadow: 1px 1px 1px #4dd0e1, -1px -1px 1px #4dd0e1, -1px 1px 1px #4dd0e1, 1px -1px 1px #4dd0e1; }
+  #footer-section #profile-card {
+    width: auto; }
+    #footer-section #profile-card .icon {
+      top: 25px; }
+      #footer-section #profile-card .icon img {
+        height: 80px;
+        width: auto;
+        border: 2px solid #0097a7;
+        border-radius: 50%; }
+    #footer-section #profile-card .panel {
+      width: 100%;
+      color: #eee; }
+      #footer-section #profile-card .panel #contact-table {
+        margin: 0px auto; }
+        #footer-section #profile-card .panel #contact-table tr, #footer-section #profile-card .panel #contact-table td, #footer-section #profile-card .panel #contact-table th {
+          text-align: justify; }
+        #footer-section #profile-card .panel #contact-table td, #footer-section #profile-card .panel #contact-table th {
+          padding: 5px;
+          text-align: left; }
 
 @media screen and (min-width: 320px) and (max-width: 949px) {
   #navbar-section {
     text-align: center;
     -webkit-box-shadow: 0 1px 5px #777;
-            box-shadow: 0 1px 5px #777; }
+    box-shadow: 0 1px 5px #777; }
     #navbar-section .logo {
       margin: 0 auto; }
     #navbar-section nav {
@@ -350,9 +279,9 @@ a {
       width: 100%;
       height: auto;
       -webkit-box-shadow: 0px 1px 5px #777;
-              box-shadow: 0px 1px 5px #777;
+      box-shadow: 0px 1px 5px #777;
       -webkit-clip-path: circle(0px at top);
-              clip-path: circle(0px at top);
+      clip-path: circle(0px at top);
       -webkit-transition: -webkit-clip-path ease-in-out 700ms;
       transition: -webkit-clip-path ease-in-out 700ms;
       transition: clip-path ease-in-out 700ms;
@@ -371,7 +300,7 @@ a {
           clear: both; }
     #navbar-section .nav-show {
       -webkit-clip-path: circle(150% at top);
-              clip-path: circle(150% at top); }
+      clip-path: circle(150% at top); }
     #navbar-section .nav-toggle-button {
       padding: 20px;
       position: absolute;
@@ -389,44 +318,63 @@ a {
         transition: all ease-in-out 500ms; }
       #navbar-section .nav-toggle-button .hamburger::before {
         -webkit-transform: translateY(-8px);
-                transform: translateY(-8px); }
+        transform: translateY(-8px); }
       #navbar-section .nav-toggle-button .hamburger::after {
         -webkit-transform: translateY(5px);
-                transform: translateY(5px); }
+        transform: translateY(5px); }
     #navbar-section .nav-toggle-button-transform .hamburger::before {
       opacity: 0; }
     #navbar-section .nav-toggle-button-transform .hamburger {
       -webkit-transform: rotate(45deg);
-              transform: rotate(45deg); }
+      transform: rotate(45deg); }
     #navbar-section .nav-toggle-button-transform .hamburger::after {
       -webkit-transform: rotate(90deg) translateX(-2.5px);
-              transform: rotate(90deg) translateX(-2.5px); }
+      transform: rotate(90deg) translateX(-2.5px); }
 
-  #about-me-section #profile-subsection #profile-image {
-    max-width: 250px; }
-  #about-me-section #skills-subsection {
-    margin: 0 5%;
+  #welcome-section {
+    background-image: url("../img/cover-small.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7; }
+
+  #about-me-section #profile-subsection {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    -ms-flex-line-pack: center;
-        align-content: center; }
-    #about-me-section #skills-subsection .card {
-      margin: 50px auto;
-      text-align: center;
-      overflow: hidden; }
-      #about-me-section #skills-subsection .card .icon {
-        border: 3px solid #0097a7; }
-      #about-me-section #skills-subsection .card .panel {
-        width: 250px;
-        height: auto;
-        padding-top: 45px;
-        border: 3px solid #0097a7;
-        overflow: hidden; }
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap; }
+    #about-me-section #profile-subsection #profile-content-box {
+      margin: 0px auto 50px auto;
+      padding: 20px 40px;
+      background-color: transparent;
+      color: #555;
+      text-align: justify; }
+  #about-me-section #skills-subsection {
+    width: 100%; }
+    #about-me-section #skills-subsection #skill-cards-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      #about-me-section #skills-subsection #skill-cards-container .card {
+        min-width: 250px;
+        -webkit-box-flex: 0.5;
+        -ms-flex-positive: 0.5;
+        flex-grow: 0.5;
+        margin: 50px;
+        padding: 10px; }
 
   #portfolio-section #portfolio-tiles {
     display: -webkit-box;
@@ -434,95 +382,135 @@ a {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    margin: 50px auto; }
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
     #portfolio-section #portfolio-tiles .tile {
-      max-width: 400px;
-      margin-left: auto;
-      margin-right: auto; } }
+      max-width: 500px; }
+
+  #footer-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-line-pack: center;
+    align-content: center; } }
 @media screen and (min-width: 950px) and (max-width: 1919px) {
+  #welcome-section {
+    background-image: url("../img/cover-large.jpg"); }
+
+  #about-me-section #profile-subsection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-line-pack: distribute;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0px auto;
+    padding: 50px; }
+    #about-me-section #profile-subsection #profile-content-box {
+      background-color: transparent;
+      color: #555;
+      text-align: justify; }
   #about-me-section #skills-subsection {
-    margin: 0 2%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
-    #about-me-section #skills-subsection .card {
-      -webkit-box-flex: 0.3;
-          -ms-flex-positive: 0.3;
-              flex-grow: 0.3;
-      margin: 50px auto;
-      text-align: center;
-      overflow: hidden; }
-      #about-me-section #skills-subsection .card .icon {
-        border: 3px solid #0097a7; }
-      #about-me-section #skills-subsection .card .panel {
-        height: auto;
-        padding-top: 45px;
-        border: 3px solid #0097a7;
-        overflow: hidden; }
+    width: 100%; }
+    #about-me-section #skills-subsection #skill-cards-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 100px auto; }
+      #about-me-section #skills-subsection #skill-cards-container .card {
+        min-width: 250px;
+        margin: 0px 25px; }
 
-  #portfolio-section #portfolio-tiles {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
-
-  #contact-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; } }
+  #portfolio-section {
+    max-width: 1200px; }
+    #portfolio-section #portfolio-tiles {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+      #portfolio-section #portfolio-tiles .tile {
+        -ms-flex-preferred-size: 500px;
+        flex-basis: 500px;
+        -ms-flex-negative: 0.4;
+        flex-shrink: 0.4; } }
 @media screen and (min-width: 1920px) {
-  #about-me-section #skills-subsection {
-    margin: 0 2%;
+  #welcome-section {
+    background-image: url("../img/cover-large.jpg"); }
+
+  #about-me-section #profile-subsection {
+    max-width: 1500px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
     -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
     -ms-flex-pack: distribute;
-        justify-content: space-around; }
-    #about-me-section #skills-subsection .card {
-      -webkit-box-flex: 0.3;
-          -ms-flex-positive: 0.3;
-              flex-grow: 0.3;
-      margin: 50px auto;
-      text-align: center;
-      overflow: hidden; }
-      #about-me-section #skills-subsection .card .icon {
-        border: 3px solid #0097a7; }
-      #about-me-section #skills-subsection .card .panel {
-        height: auto;
-        padding-top: 45px;
-        border: 3px solid #0097a7;
-        overflow: hidden; }
+    justify-content: space-around;
+    max-width: 1500px;
+    margin: 0px auto; }
+    #about-me-section #profile-subsection #profile-content-box {
+      margin: 0px auto 50px auto;
+      padding: 80px;
+      margin: 50px;
+      background-color: transparent;
+      color: #555;
+      text-align: justify; }
+  #about-me-section #skills-subsection {
+    width: 100%; }
+    #about-me-section #skills-subsection #skill-cards-container {
+      max-width: 1500px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 100px auto; }
 
   #portfolio-section #portfolio-tiles {
     display: -webkit-box;
@@ -530,22 +518,20 @@ a {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     -ms-flex-pack: distribute;
-        justify-content: space-around; }
+    justify-content: space-around; }
+    #portfolio-section #portfolio-tiles .tile {
+      -ms-flex-preferred-size: 500px;
+      flex-basis: 500px;
+      -ms-flex-negative: 0.4;
+      flex-shrink: 0.4; } }
 
-  #contact-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; } }
+/*# sourceMappingURL=style.css.map */

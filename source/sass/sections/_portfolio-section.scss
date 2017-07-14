@@ -1,7 +1,7 @@
 #portfolio-section {
-  min-width: 100%;
-  width: auto;
+  max-width: 1200px;
   height: auto;
+  margin: 0px auto;
   h1 {
     @include section-title;
     background-color: $cyan-500;

@@ -6,7 +6,8 @@
   width: 100%;
   background-color: $cyan-700;
   color: $gray-lighter;
-  box-shadow: 0 1px 5px $gray-light;
+  -webkit-box-shadow: 0 1px 5px $gray-light;
+          box-shadow: 0 1px 5px $gray-light;
   .logo {
     float: left;
     display: inline-block;
@@ -20,7 +21,7 @@
     margin: 0px;
     height: auto;
     position: relative;
-    float: left;
+    float: right;
     background-color: transparent;
     ul {
       list-style-type: none;

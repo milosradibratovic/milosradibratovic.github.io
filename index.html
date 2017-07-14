@@ -7,22 +7,22 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   <!--  =======================
           NAVIGATION (NAVBAR)
         =======================  -->
   <div id="navbar-section">
-    <h1 class="logo">M<span>R</span></h1>
+    <a href="#welcome-section"><h1 class="logo">M<span>R</span></h1></a>
 
     <nav>
       <ul>
-        <li><a href="#welcome-section">Home</a></li>
         <li><a href="#about-me-section">About</a></li>
-        <li><a href="#portfolio-section">Portfolio</a></li>
-        <li><a href="#contact-section">Contact</a></li>
+        <li><a href="#portfolio-section">Demo</a></li>
+        <li><a href="#footer-section">Contact</a></li>
       </ul>
     </nav>
 
@@ -45,62 +45,54 @@
     <div id="about-me-section">
       <h1>About me</h1>
         <div id="profile-subsection">
-          <img id="profile-image" src="./img/profile-image.jpg">
 
-          <div class="content-box">
-            <p>Hello, my name is Milos. I'm a web developer currently living in Belgrade, Serbia. I like to write clean, maintainable code, further my knowledge of programming and technology in general, read everything from computer science literature to classics and fantasy novels. My fields of intrest are JavaScript because of vast quantity of frameworks and libraries based on it that power the modern web, front-end we developement, for sheer amunt of tools available to work with, algorithms because they offer amazing performance and reliability when used correctly, and are quite entertaining to learn about.</p>
+          <div id="profile-content-box">
+            <p>Hello, my name is Milos. I'm a web developer currently living in Belgrade, Serbia. Programming and computer science in general are topics I'm very interested in and try to extend and improve my knowledge and understanding of , maintainable code, further my knowledge of programming and technology in general, read everything from computer science literature to classics and fantasy novels. My fields of intrest are JavaScript because of vast quantity of frameworks and libraries based on it that power the modern web, front-end we developement, for sheer amunt of tools available to work with, algorithms because they offer amazing performance and reliability when used correctly, and are quite entertaining to learn about. I'm fluent in English both written and oral (passed exams for Cambridge BEC Vantage and FCE certificates at British Council in Belgrade) and I have good communication skills.</p>
           </div>
         </div>
-        <h2>Skills</h2>
         <div id="skills-subsection">
-          <div class="card">
-            <div class="icon">
-              <span class="fa fa-code fa-5x" aria-hidden="true"></span>
-            </div>
-            <div class="panel">
-              <ul>
-                <li>HTML 5</li>
-                <li>CSS 3</li>
-                <li>JavaScript</li>
-                <li>C</li>
-                <li>Java</li>
-                <li>Ruby</li>
-              </ul>
-            </div>
+          <div class="subsection-title">
+            <h2>Skills</h2>
           </div>
-          <div class="card">
-            <div class="icon">
-              <span class="fa fa-cogs fa-5x" aria-hidden="true"></span>
-            </div>
-            <div class="panel">
-              <ul>
-                <li>SASS</li>
-                <li>Less</li>
-                <li>Bourbon, Neat</li>
-                <li>Bootstrap</li>
-                <li>TypeScript</li>
-                <li>jQuery</li>
-              </ul>
-              <div class="comming-soon-subsection">
-                <h4>Comming soon</h4>
-                <ul>
-                  <li>Angular</li>
-                  <li>NodeJS</li>
-                </ul>
+          <div id="skill-cards-container">
+            <div class="card">
+              <div class="icon">
+                <span class="fa fa-code fa-5x" aria-hidden="true"></span>
+              </div>
+              <div class="card-title">
+                <h3>Languages</h3>
+              </div>
+              <div class="panel">
+                <p>
+                  Some of the languages that I know and like to use are HTML 5, CSS 3, JavaScript, <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a> (supersert of JavaScript made and maintained by Microsoft), C (because I hate convenience and enjoy possibility of shooting myself in the foot), Java (object oriented, used in wide range of cases) and Ruby.
+                </p>
               </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="icon">
-              <span class="fa fa-book fa-5x" aria-hidden="true"></span>
+            <div class="card">
+              <div class="icon">
+                <span class="fa fa-code fa-5x" aria-hidden="true"></span>
+              </div>
+              <div class="card-title">
+                <h3>Libraries, frameworks and tools</h3>
+              </div>
+              <div class="panel">
+                <p>
+                  I also like to use css preprocessors like <a href="http://sass-lang.com/" target="_blank">Sass</a> (with <a href="http://bourbon.io/" target="_blank">Bourbon</a>, a great mixin library for sass that makes writing of stylesheets really fun and helps with wendor prefixes and <a href="http://neat.bourbon.io/" target="_blank">Neat</a>, a nice and lightweight Sass grid that is really easy to customize and configure) and <a href="http://lesscss.org/" target="_blank">Less</a>, frameworks such as <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> and <a href="https://angular.io/">Angular</a> and libraries like <a href="https://jquery.com/" target="_blank">jQuery</a> (that is great way to fool yourself into thinking that you know JavaScript). I have experience in using Git version control system.
+                </p>
+              </div>
             </div>
-            <div class="panel">
-              <ul>
-                <li>Strong understanding of computer science concepts</li>
-                <li>Good understanding of algorithms</li>
-                <li>Good uderstanding of obejct oriented programming principles</li>
-                <li>Solid knowledge of design patterns</li>
-              </ul>
+            <div class="card">
+              <div class="icon">
+                <span class="fa fa-code fa-5x" aria-hidden="true"></span>
+              </div>
+              <div class="card-title">
+                <h3>Additional</h3>
+              </div>
+              <div class="panel">
+                <p>
+                  Algorithms and algorithm construction are very interesting to me, programming design patterns are also topic that I like to read on and constantly improve my understanding of, and object oriented programming as one of most popular programming paradigms today is the one I like to use.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -109,37 +101,54 @@
             PORTFOLIO SECTION
           =====================  -->
     <div id="portfolio-section">
-      <h1>Portfolio</h1>
+      <h1>Demo</h1>
       <div id="portfolio-tiles">
-        <div class="tile" id="tile-1">
-          <div class="tile-thumbnail">
-            <img src="./img/budget-app-screenshot-image.jpg" alt="project thumbnail">
+        <div class="tile">
+          <div class="tile-icon">
+            <span class="fa fa-calculator fa-4x"></span>
           </div>
           <div class="tile-content" >
             <h4 class="tile-title">JS budget calculator</h4>
+            <p class="tile-description">Simple monthly budget calculator built using plain JavaScript</p>
             <a class="btn" href="https://github.com/milosradibratovic/budget-calculator" target="_blank">View on github</a>
           </div>
         </div>
-        <div class="tile" id="tile-2">
-          <div class="tile-thumbnail">
-            <img src="./img/code-image-medium.jpg" alt="project thumbnail">
+        <div class="tile">
+          <div class="tile-icon">
+            <span class="fa fa-laptop fa-4x"></span>
           </div>
           <div class="tile-content">
             <h4 class="tile-title">My website</h4>
+            <p class="tile-description">Source code for this page built using Sass, CSS, HTML and jQuery</p>
             <a class="btn" href="https://github.com/milosradibratovic/milosradibratovic.github.io" target="_blank">View on github</a>
           </div>
         </div>
       </div>
     </div>
     <!--  ==================
-            CONTACT SECTION
+            FOOTER SECTION
           ==================  -->
-    <div id="contact-section">
-      <div class="contact-item">
-        <a href="https://twitter.com/radibratovic_m" target="_blank"><span class="fa fa-twitter fa-lg contact-icon"></span></a>
-      </div>
-      <div class="contact-item">
-        <a href="https://github.com/milosradibratovic" target="_blank"><span class="fa fa-github fa-lg contact-icon"></span></a>
+    <div id="footer-section">
+      <div class="card" id="profile-card">
+        <div class="icon">
+          <img src="./img/profile-image-small.jpg" alt="profile image">
+        </div>
+        <div class="panel">
+          <table id="contact-table">
+            <tr>
+              <th>name: </th>
+              <td>Milos Radibratovic</td>
+            </tr>
+            <tr>
+              <th>email: </th>
+              <td>radibratovic.milos@gmail.com</td>
+            </tr>
+            <tr>
+              <th>phone: </th>
+              <td>+381 64 31 25 787</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
 

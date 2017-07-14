@@ -1,40 +1,90 @@
 @media screen and (min-width: 950px) and (max-width: 1919px) {
+  #welcome-section {
+    background-image: url('../img/cover-large.jpg'); 
+  }
+
   #about-me-section {
-    #skills-subsection {
-      margin: 0 2%;
+    #profile-subsection {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-flow: row nowrap;
-      align-content: center;
-      justify-content: space-around;
-      .card {
-        flex-grow: 0.3;
-        margin: 50px auto;
-        text-align: center;
-        overflow: hidden;
-        .icon {
-          border: 3px solid $cyan-700;
-        }
-        .panel {
-          height: auto;
-          padding-top: 45px;
-          border: 3px solid $cyan-700;
-          overflow: hidden;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -ms-flex-line-pack: distribute;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+                  max-width: 1500px;
+                  margin: 0px auto;
+      padding: 50px;
+      #profile-content-box {
+        background-color: transparent;
+        color: $gray;
+        text-align: justify;
+      }
+    }
+    #skills-subsection {
+      width: 100%;
+      #skill-cards-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        margin: 100px auto;
+        .card {
+          min-width: 250px;
+          margin: 0px 25px;
         }
       }
     }
   }
+
   #portfolio-section {
+    max-width: 1200px;
     #portfolio-tiles {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-flow: row nowrap;
-      align-content: center;
-      justify-content: space-around;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      .tile {
+        -ms-flex-preferred-size: 500px;
+            flex-basis: 500px;
+            -ms-flex-negative: 0.4;
+                flex-shrink: 0.4;
+        .tile-icon {
+
+          }
+        .tile-content {
+
+          .tile-title {
+
+          }
+          .tile-description {
+
+          }
+        }
+      }
     }
-  }
-  #contact-section {
-    display: flex;
-    flex-flow: row nowrap;
-    align-content: center;
-    justify-content: space-around;
   }
 }

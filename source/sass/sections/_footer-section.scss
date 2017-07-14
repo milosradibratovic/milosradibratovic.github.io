@@ -1,0 +1,29 @@
+#footer-section {
+  background-color: $cyan-900;
+  #profile-card {
+    width: auto;
+    .icon {
+      top: 25px;
+      img {
+        height: 80px;
+        width: auto;
+        border: 2px solid $cyan-700;
+        border-radius: 50%;
+      }
+    }
+    .panel {
+      width: 100%;
+      color: $gray-lighter;
+      #contact-table {
+        margin: 0px auto;
+         tr, td, th {
+        text-align: justify;
+        }
+        td, th {
+          padding: 5px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
