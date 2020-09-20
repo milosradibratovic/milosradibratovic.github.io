@@ -120,11 +120,13 @@ a {
     opacity: 0;
     -webkit-transform: scale(2.5);
     transform: scale(2.5); } }
+
 @keyframes ripple {
   100% {
     opacity: 0;
     -webkit-transform: scale(2.5);
     transform: scale(2.5); } }
+
 #navbar-section {
   position: fixed;
   top: 0px;
@@ -173,7 +175,7 @@ a {
   min-width: 100%;
   min-height: 100%;
   background-color: #e0f7fa;
-  background-image: url("../img/cover-hdd.jpg");
+  background-image: url("../images/cover-hdd.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -336,15 +338,13 @@ a {
     #navbar-section .nav-toggle-button-transform .hamburger::after {
       -webkit-transform: rotate(90deg) translateX(-2.5px);
       transform: rotate(90deg) translateX(-2.5px); }
-
   #welcome-section {
-    background-image: url("../img/cover-small.jpg");
+    background-image: url("../images/cover-small.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.7; }
-
   #about-me-section #profile-subsection {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -381,7 +381,6 @@ a {
         flex-grow: 0.5;
         margin: 50px;
         padding: 10px; }
-
   #portfolio-section #portfolio-tiles {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -395,7 +394,6 @@ a {
     align-items: center; }
     #portfolio-section #portfolio-tiles .tile {
       max-width: 500px; }
-
   #footer-section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -408,10 +406,10 @@ a {
     justify-content: space-around;
     -ms-flex-line-pack: center;
     align-content: center; } }
+
 @media screen and (min-width: 950px) and (max-width: 1919px) {
   #welcome-section {
-    background-image: url("../img/cover-large.jpg"); }
-
+    background-image: url("../images/cover-large.jpg"); }
   #about-me-section #profile-subsection {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -450,7 +448,6 @@ a {
       #about-me-section #skills-subsection #skill-cards-container .card {
         min-width: 250px;
         margin: 0px 25px; }
-
   #portfolio-section {
     max-width: 1200px; }
     #portfolio-section #portfolio-tiles {
@@ -474,10 +471,10 @@ a {
         flex-basis: 500px;
         -ms-flex-negative: 0.4;
         flex-shrink: 0.4; } }
+
 @media screen and (min-width: 1920px) {
   #welcome-section {
-    background-image: url("../img/cover-large.jpg"); }
-
+    background-image: url("../images/cover-large.jpg"); }
   #about-me-section #profile-subsection {
     max-width: 1500px;
     display: -webkit-box;
@@ -517,7 +514,6 @@ a {
       -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 100px auto; }
-
   #portfolio-section #portfolio-tiles {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -539,5 +535,4 @@ a {
       flex-basis: 500px;
       -ms-flex-negative: 0.4;
       flex-shrink: 0.4; } }
-
 /*# sourceMappingURL=style.css.map */
